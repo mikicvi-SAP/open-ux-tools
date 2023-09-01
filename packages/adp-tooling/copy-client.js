@@ -4,5 +4,7 @@ const path = require('path');
 
 const index = fs.readFileSync(location);
 const target = path.join(__dirname, 'dist/preview/client');
-fs.mkdirSync(target);
+if (!fs.existsSync(target)) {
+    fs.mkdirSync(target);
+}
 fs.writeFileSync(path.join(target, 'index.js'), index);
