@@ -1,8 +1,9 @@
 {
     "extends": "../../tsconfig.json",
     "include": [
-        "./src/**/*",
-        "./types/*"
+        "src",
+        "test",
+        "types"
     ],
     "compilerOptions": {
         "target": "es2022",
@@ -12,15 +13,16 @@
         "strict": true,
         "strictPropertyInitialization": false,
         "moduleResolution": "node",
-        "rootDir": "./src",
-        "baseUrl": "./",
+        "rootDir": ".",
+        "baseUrl": ".",
         "paths": {
             "open/ux/rta/ext/*": [
                 "./src/*"
             ]
         },
         "types": [
-            "@sapui5/types"
+            "@sapui5/types",
+            "jest"
         ]
     }
 }
