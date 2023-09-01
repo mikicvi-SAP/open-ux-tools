@@ -2,7 +2,7 @@
     "extends": "../../tsconfig.json",
     "include": [
         "./src/**/*",
-        "../../types/sapui5"
+        "./types/*"
     ],
     "compilerOptions": {
         "target": "es2022",
@@ -18,6 +18,9 @@
             "open/ux/rta/ext/*": [
                 "./src/*"
             ]
-        }
+        },
+        "types": [
+            "@sapui5/types"
+        ]
     }
 }

@@ -939,6 +939,9 @@ importers:
 
   packages/rta-client-extension:
     devDependencies:
+      '@sapui5/types':
+        specifier: 1.117.1
+        version: 1.117.1
       '@ui5/cli':
         specifier: 3.5.0
         version: 3.5.0
@@ -1390,9 +1393,6 @@ importers:
 
   types:
     devDependencies:
-      '@sapui5/types':
-        specifier: 1.117.1
-        version: 1.117.1
       '@types/mem-fs-editor':
         specifier: 7.0.1
         version: 7.0.1

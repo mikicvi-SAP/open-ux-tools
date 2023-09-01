@@ -1,4 +1,4 @@
 {
     "extends": "./tsconfig.json",
-    "include": ["src", "test", ".eslintrc.js", "../../types/sapui5"]
+    "include": ["src", "test", ".eslintrc.js", "types/*"]
 }
