@@ -1,0 +1,23 @@
+{
+    "extends": "../../tsconfig.json",
+    "include": [
+        "src",
+        "../../types/sapui5"
+    ],
+    "compilerOptions": {
+        "target": "es2022",
+        "module": "es2022",
+        "skipLibCheck": true,
+        "allowJs": true,
+        "strict": true,
+        "strictPropertyInitialization": false,
+        "moduleResolution": "node",
+        "rootDir": "./src",
+        "baseUrl": "./",
+        "paths": {
+            "open/ux/rta/ext/*": [
+                "./src/*"
+            ]
+        }
+    }
+}

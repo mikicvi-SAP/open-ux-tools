@@ -1,0 +1,33 @@
+{
+    "name": "@sap-ux-private/rta-client-extension",
+    "version": "0.0.1",
+    "description": "Client-side extension of the SAPUI5 Runtime Adaptation",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/SAP/open-ux-tools.git",
+        "directory": "packages/rta-client-extension"
+    },
+    "license": "Apache-2.0",
+    "private": false,
+    "main": "dist/index.js",
+    "scripts": {
+        "build": "ui5 build --clean-dest --exclude-task=generateComponentPreload",
+        "clean": "rimraf --glob dist coverage *.tsbuildinfo",
+        "format": "prettier --write '**/*.{js,json,ts,yaml,yml}' --ignore-path ../../.prettierignore",
+        "lint": "eslint . --ext .ts",
+        "lint:fix": "eslint . --ext .ts --fix",
+        "test": "jest --ci --forceExit --detectOpenHandles --colors"
+    },
+    "files": [
+        "dist"
+    ],
+    "engines": {
+        "pnpm": ">=6.26.1 < 7.0.0 || >=7.1.0",
+        "node": ">= 14.16.0 < 15.0.0 || >=16.1.0 < 17.0.0 || >=18.0.0 < 19.0.0"
+    },
+    "dependencies": {},
+    "devDependencies": {
+        "@ui5/cli": "3.5.0",
+        "ui5-tooling-transpile": "3.2.0"
+    }
+}

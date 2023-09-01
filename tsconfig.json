@@ -78,6 +78,9 @@
       "path": "packages/project-access"
     },
     {
+      "path": "packages/rta-client-extension"
+    },
+    {
       "path": "packages/store"
     },
     {
