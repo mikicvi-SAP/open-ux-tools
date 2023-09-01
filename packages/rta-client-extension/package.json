@@ -11,7 +11,8 @@
     "private": false,
     "main": "dist/index.js",
     "scripts": {
-        "build": "ui5 build --clean-dest --exclude-task=generateComponentPreload",
+        "check": "tsc --noEmit",
+        "build": "pnpm check && ui5 build --clean-dest --exclude-task=generateComponentPreload",
         "clean": "rimraf --glob dist coverage *.tsbuildinfo",
         "format": "prettier --write '**/*.{js,json,ts,yaml,yml}' --ignore-path ../../.prettierignore",
         "lint": "eslint . --ext .ts",

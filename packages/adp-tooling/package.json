@@ -41,7 +41,7 @@
         "@sap-ux/logger": "workspace:*",
         "@sap-ux/system-access": "workspace:*",
         "@sap-ux/ui5-config": "workspace:*",
-        "@sap-ux-private/rta-client-extension": "workspace:*",
+        "@private/rta-client-extension": "workspace:@sap-ux-private/rta-client-extension@*",
         "ejs": "3.1.7",
         "mem-fs": "2.1.0",
         "mem-fs-editor": "9.4.0",

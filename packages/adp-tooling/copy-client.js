@@ -1,4 +1,4 @@
-const location = require.resolve('@sap-ux-private/rta-client-extension');
+const location = require.resolve('@private/rta-client-extension');
 const fs = require('fs');
 const path = require('path');
 

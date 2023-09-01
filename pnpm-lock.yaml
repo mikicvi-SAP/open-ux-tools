@@ -141,8 +141,8 @@ importers:
 
   packages/adp-tooling:
     dependencies:
-      '@sap-ux-private/rta-client-extension':
-        specifier: workspace:*
+      '@private/rta-client-extension':
+        specifier: workspace:@sap-ux-private/rta-client-extension@*
         version: link:../rta-client-extension
       '@sap-ux/axios-extension':
         specifier: workspace:*
