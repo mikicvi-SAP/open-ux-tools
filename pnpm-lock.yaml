@@ -147,6 +147,9 @@ importers:
       '@sap-ux/logger':
         specifier: workspace:*
         version: link:../logger
+      '@sap-ux/preview-middleware':
+        specifier: workspace:*
+        version: link:../preview-middleware
       '@sap-ux/system-access':
         specifier: workspace:*
         version: link:../system-access
@@ -862,9 +865,6 @@ importers:
 
   packages/preview-middleware:
     dependencies:
-      '@sap-ux/adp-tooling':
-        specifier: workspace:*
-        version: link:../adp-tooling
       '@sap-ux/logger':
         specifier: workspace:*
         version: link:../logger

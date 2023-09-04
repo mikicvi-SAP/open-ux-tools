@@ -75,7 +75,7 @@ export class AdpPreview {
      * @param logger logger instance
      */
     constructor(
-        private readonly config: AdpPreviewConfig,
+        private readonly config: AdpPreviewConfig['adp'],
         private readonly project: ReaderCollection,
         private readonly logger: ToolsLogger
     ) {}

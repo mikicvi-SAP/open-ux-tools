@@ -1,5 +1,6 @@
 import type { UI5FlexLayer } from '@sap-ux/project-access';
 import type { DestinationAbapTarget, UrlAbapTarget } from '@sap-ux/system-access';
+import type { MiddlewareConfig as PreviewMiddlewareConfig } from '@sap-ux/preview-middleware';
 
 export interface DescriptorVariant {
     layer: UI5FlexLayer;
@@ -14,13 +15,14 @@ export interface DescriptorVariant {
  */
 type AbapTarget = DestinationAbapTarget | Pick<UrlAbapTarget, 'url' | 'client' | 'scp'>;
 
-export interface AdpPreviewConfig {
-    target: AbapTarget;
-
-    /**
-     * If set to true then certification validation errors are ignored.
-     */
-    ignoreCertErrors?: boolean;
+export interface AdpPreviewConfig extends PreviewMiddlewareConfig {
+    adp: {
+        target: AbapTarget;
+        /**
+         * If set to true then certification validation errors are ignored.
+         */
+        ignoreCertErrors?: boolean;
+    };
 }
 
 export interface AdpWriterConfig {

@@ -58,7 +58,7 @@ export async function generate(basePath: string, config: AdpWriterConfig, fs?: E
                 adp: {
                     target: fullConfig.target,
                     ignoreCertErrors: false
-                } as AdpPreviewConfig
+                } as AdpPreviewConfig['adp']
             }
         },
         {
